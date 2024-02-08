@@ -37,7 +37,7 @@ export default function NavBar() {
           {SidebarData.map((item, index) => {
             return (
               <li key={index} className={item.className}>
-                <Link to={item.path}>
+                <Link to={`/pet${item.path}`}>
                   {item.icon}
                   <span>{item.title}</span>
                 </Link>

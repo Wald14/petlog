@@ -9,7 +9,7 @@ import './assets/css/index.css'
 
 // Components
 import { NavBar } from './components'
-import { HomePage, PageNotFound } from './pages'
+import { HomePage, PageNotFound, PetProfile } from './pages'
 
 
 function App() {
@@ -23,6 +23,11 @@ function App() {
         <Route
           path="/"
           Component={HomePage}
+        />
+
+        <Route
+          path="/pet/:pet"
+          Component={PetProfile}
         />
 
         <Route
