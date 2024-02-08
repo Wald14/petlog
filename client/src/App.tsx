@@ -9,7 +9,8 @@ import './assets/css/index.css'
 
 // Components
 import { NavBar } from './components'
-import { Home } from './pages'
+import { HomePage, PageNotFound } from './pages'
+
 
 function App() {
 
@@ -21,11 +22,15 @@ function App() {
       <Routes>
         <Route
           path="/"
-          Component={Home}
+          Component={HomePage}
         />
-      </Routes>
 
-      <h1>PetLog Main Header</h1>
+        <Route
+          path="*"
+          Component={PageNotFound}
+        />
+
+      </Routes>
     </BrowserRouter>
 
   )

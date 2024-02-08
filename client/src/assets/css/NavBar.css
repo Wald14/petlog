@@ -28,21 +28,21 @@
   justify-self: end;
 }
 
-.title {
+.navbar-title {
   color: var(--color4);
   margin-left: 1rem;
   font-size: 2rem;
   text-decoration: none;
 }
 
-.login {
+.navbar-login {
   color: var(--color4);
   margin-right: 2rem;
   font-size: 1.5rem;
   text-decoration: none;
 }
 
-.login:hover {
+.navbar-login:hover {
   color: var(--color6)
 }
 

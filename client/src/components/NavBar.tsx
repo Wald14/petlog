@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import { useState } from 'react'
 import { Link } from "react-router-dom"
 import { SidebarData } from "../Data/SidebarData"
 // React Icons
@@ -15,20 +15,20 @@ export default function NavBar() {
 
 
   return (
-    <IconContext.Provider value={{color: "#fff"}}>
+    <IconContext.Provider value={{ color: "#fff" }}>
       <div className="navbar">
         <div className="navbar-left">
-        <Link to="#" className="menu-bars">
-          <FaBars onClick={showSidebar}/>
-        </Link>
-        <Link to="/" className="title">PetLog</Link>
+          <Link to="#" className="menu-bars">
+            <FaBars onClick={showSidebar} />
+          </Link>
+          <Link to="/" className="navbar-title">PetLog</Link>
         </div>
         <div className="navbar-right">
-        <Link to="logout" className="login">Login</Link>
+          <Link to="logout" className="navbar-login">Login</Link>
         </div>
       </div>
       <nav className={sidebar ? 'sidebar-menu active' : 'sidebar-menu'}>
-        <ul className="sidebar-menu-items"  onClick={showSidebar}>
+        <ul className="sidebar-menu-items" onClick={showSidebar}>
           <li className="sidebar-toggle">
             <Link to="#" className="menu-bars">
               <AiOutlineClose />
