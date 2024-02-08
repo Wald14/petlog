@@ -10,36 +10,36 @@ export const SidebarData: {title: string, path: string, icon: ReactElement, clas
     title: "Home",
     path: "/",
     icon: <AiOutlineHome />,
-    className: 'nav-text'
+    className: 'sidebar-text'
   },
   {
     title: "Account",
     path: "/account",
     icon: <VscAccount />,
-    className: 'nav-text'
+    className: 'sidebar-text'
   },
   {
     title: "Obi",
     path: "/obi",
     icon: <PiDogFill />,
-    className: 'nav-text'
+    className: 'sidebar-text'
   },
   {
     title: "Sunny",
     path: "/sunny",
     icon: <PiCat />,
-    className: 'nav-text'
+    className: 'sidebar-text'
   },
   {
     title: "Moose",
     path: "/moose",
     icon: <PiDogFill />,
-    className: 'nav-text'
+    className: 'sidebar-text'
   },
   {
     title: "Logout",
     path: "/logout",
     icon: <FiLogOut />,
-    className: 'nav-text'
+    className: 'sidebar-text'
   },
 ]

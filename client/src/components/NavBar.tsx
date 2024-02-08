@@ -20,10 +20,11 @@ export default function NavBar() {
         <Link to="#" className="menu-bars">
           <FaBars onClick={showSidebar}/>
         </Link>
+        <h1>PetLog</h1>
       </div>
-      <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
-        <ul className="nav-menu-items"  onClick={showSidebar}>
-          <li className="navbar-toggle">
+      <nav className={sidebar ? 'sidebar-menu active' : 'sidebar-menu'}>
+        <ul className="sidebar-menu-items"  onClick={showSidebar}>
+          <li className="sidebar-toggle">
             <Link to="#" className="menu-bars">
               <AiOutlineClose />
             </Link>
