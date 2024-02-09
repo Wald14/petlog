@@ -1,0 +1,125 @@
+:root {
+  --color1: #23583a;
+  --color2: #2C6E49;
+  --color3: #4C956C;
+  --color4: #f5f5f5;
+  --color5: #FEFEE3;
+  --color6: #FFC9B9;
+  --color7: #D68C45;
+
+  --color8: #648844;
+  --color9: #bb9e11;
+  --color10: #f07d19;
+  --color11: #507c6d;
+  --color12: #b34248;
+
+  --color13: #dcdcdd;
+  --color14: #e4e4e4;
+}
+
+.pet-profile {
+  padding: 1rem;
+  background-color: var(--color13);
+}
+
+.pet-profile h2 {
+  font-size: 2rem;
+}
+
+.pet-profile h3 {
+  font-size: 1.5rem;
+}
+
+
+.pet-profile-basic-info {
+  background-color: var(--color4);
+  padding: 1rem;
+  border-radius: 15px;
+  margin: 1rem 0rem;
+}
+
+.pet-profile-pic {
+  height: 3rem;
+  width: 3rem;
+}
+
+.icon-word,
+.icon-word2 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.icon-word span,
+.icon-word2 span{
+  margin: 0.5rem
+}
+
+.icon-word2 {
+  margin-left: 3rem;    
+}
+
+.icon-box {
+  background-color: var(--color14);
+  border-radius: 5px;
+  padding: .25rem;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pet-profile-basic-info-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 680px) { 
+  .pet-profile-basic-info-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .icon-word2 {
+    margin-left: 0rem;
+  }
+}
+
+.pet-profile-exercise {
+  background-color: var(--color11);
+}
+
+.pet-profile-eating {
+  background-color: var(--color9)
+}
+
+.pet-profile-bathroom {
+  background-color: var(--color10)
+}
+
+.pet-profile-medical {
+  background-color: var(--color12) 
+}
+
+.pet-profile-exercise,
+.pet-profile-eating,
+.pet-profile-bathroom,
+.pet-profile-medical {
+  padding: 0.5rem 0.25rem;
+  margin: .5rem 0rem;
+  border-radius: 0.5rem;
+}
+
+.pet-profile-options {
+  background-color: var(--color4);
+  padding: 1rem;
+  border-radius: 15px;
+  margin: 1rem 0rem;
+  color: white;
+  font-weight: 500;
+}
